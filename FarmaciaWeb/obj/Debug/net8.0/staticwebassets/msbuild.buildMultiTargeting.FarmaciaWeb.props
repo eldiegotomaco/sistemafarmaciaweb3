@@ -1,3 +1,0 @@
-﻿<Project>
-  <Import Project="..\build\FarmaciaWeb.props" />
-</Project>
