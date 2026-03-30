@@ -1,0 +1,76 @@
+﻿@model FarmaciaWeb.Models.Medicamento
+
+@{
+    ViewData["Title"] = "Editar Medicamento";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-primary">
+                <div class="card-header bg-primary text-white text-center">
+                    <h3><i class="bi bi-pencil-square"></i> Editar Información</h3>
+                </div>
+                <div class="card-body bg-light">
+                    <form asp-action="Edit">
+                        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                        <input type="hidden" asp-for="Id" />
+
+                        <div class="row">
+                            <div class="col-md-8 mb-3">
+                                <label asp-for="Nombre" class="form-label fw-bold"></label>
+                                <input asp-for="Nombre" class="form-control border-primary" />
+                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Activo" class="form-label fw-bold">Estado</label>
+                                <select asp-for="Activo" class="form-select border-primary">
+                                    <option value="true">Activo</option>
+                                    <option value="false">Inactivo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Descripcion" class="form-label fw-bold"></label>
+                                <textarea asp-for="Descripcion" class="form-control border-primary" rows="2"></textarea>
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Precio" class="form-label fw-bold"></label>
+                                <input asp-for="Precio" class="form-control border-primary" />
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Stock" class="form-label fw-bold"></label>
+                                <input asp-for="Stock" class="form-control border-primary" />
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="FechaVencimiento" class="form-label fw-bold"></label>
+                                <input asp-for="FechaVencimiento" class="form-control border-primary" />
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="CategoriaId" class="form-label fw-bold">Categoría</label>
+                                <select asp-for="CategoriaId" class="form-select border-primary" asp-items="ViewBag.CategoriaId"></select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="EstanteId" class="form-label fw-bold">Estante</label>
+                                <select asp-for="EstanteId" class="form-select border-primary" asp-items="ViewBag.EstanteId"></select>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">Cancelar</a>
+                            <button type="submit" class="btn btn-primary px-5">Guardar Cambios</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -13,5 +13,6 @@ namespace FarmaciaWeb.Data
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Estante> Estantes { get; set; }
+        public DbSet<FarmaciaWeb.Models.Medicamento> Medicamentos { get; set; }
     }
 }

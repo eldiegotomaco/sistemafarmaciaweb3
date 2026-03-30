@@ -2,9 +2,22 @@
 
 <h2>Crear</h2>
 
-<form asp-action="Create">
-    <input asp-for="Nombre" class="form-control" placeholder="Nombre" />
-    <input asp-for="Descripcion" class="form-control" placeholder="Descripción" />
+<form asp-action="Create" method="post">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-    <button type="submit" class="btn btn-success">Guardar</button>
+    @* Revisa que los nombres de los inputs coincidan con el modelo *@
+    <div class="form-group mb-3">
+        <label class="control-label fw-bold">Nombre del Estante</label>
+        <input name="Nombre" class="form-control border-success" required />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label fw-bold">Descripción</label>
+        <input name="Descripcion" class="form-control border-success" placeholder="Escribe algo aquí..." />
+    </div>
+    <div class="form-group mt-4">
+        @* ¡MUY IMPORTANTE!: El botón debe ser tipo "submit" *@
+        <button type="submit" class="btn btn-success btn-lg">Guardar Estante</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+    </div>
 </form>

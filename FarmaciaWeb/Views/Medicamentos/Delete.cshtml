@@ -1,0 +1,36 @@
+﻿@model FarmaciaWeb.Models.Medicamento
+
+@{
+    ViewData["Title"] = "Eliminar Registro";
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow border-danger">
+                <div class="card-header bg-danger text-white text-center">
+                    <h4><i class="bi bi-exclamation-triangle"></i> ¿Eliminar Medicamento?</h4>
+                </div>
+                <div class="card-body">
+                    <p class="text-center mb-4">Esta acción no se puede deshacer. Confirme los datos del producto:</p>
+
+                    <ul class="list-group list-group-flush mb-4">
+                        <li class="list-group-item"><strong>Nombre:</strong> @Model.Nombre</li>
+                        <li class="list-group-item"><strong>Precio:</strong> $@Model.Precio</li>
+                        <li class="list-group-item"><strong>Stock Actual:</strong> @Model.Stock</li>
+                        <li class="list-group-item"><strong>Categoría:</strong> @Model.Categoria?.Nombre</li>
+                        <li class="list-group-item"><strong>Ubicación:</strong> @Model.Estante?.Nombre</li>
+                    </ul>
+
+                    <form asp-action="Delete">
+                        <input type="hidden" asp-for="Id" />
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-danger btn-lg">Sí, Eliminar de Inventario</button>
+                            <a asp-action="Index" class="btn btn-outline-secondary">Cancelar y Volver</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>cv

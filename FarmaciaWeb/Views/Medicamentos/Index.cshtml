@@ -1,0 +1,108 @@
+﻿@model IEnumerable<FarmaciaWeb.Models.Medicamento>
+
+@{
+    ViewData["Title"] = "Inventario";
+}
+
+<div class="container mt-4">
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <h2 class="text-success"><i class="bi bi-capsule"></i> Gestión de Inventario</h2>
+        <a asp-action="Create" class="btn btn-success shadow-sm">
+            <i class="bi bi-plus-circle"></i> Nuevo Medicamento
+        </a>
+    </div>
+    <div class="mb-3 d-flex gap-2">
+        <a asp-action="Index" asp-route-tipoReporte="vencidos" class="btn btn-danger btn-sm">Reporte Vencidos</a>
+        <a asp-action="Index" asp-route-tipoReporte="porVencer" class="btn btn-warning btn-sm">Reporte Proximos Vencer</a>
+        <a asp-action="Index" asp-route-tipoReporte="bajoStock" class="btn btn-dark btn-sm">Reporte Bajo Stock</a>
+        <a asp-action="Index" class="btn btn-secondary btn-sm">Todo el Inventario</a>
+    </div>
+    <form asp-action="Index" method="get" class="card shadow-sm mb-4">
+        <div class="card-body bg-light">
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <label class="form-label fw-bold">Buscar por Nombre</label>
+                    <input type="text" name="buscar" class="form-control border-success" value="@ViewData["FiltroActual"]" placeholder="Nombre del producto..." />
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Categoría</label>
+                    <select name="filtroCategoria" class="form-select border-success" asp-items="ViewBag.Categorias">
+                        <option value="">-- Todas --</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label class="form-label fw-bold">Estante</label>
+                    <select name="filtroEstante" class="form-select border-success" asp-items="ViewBag.Estantes">
+                        <option value="">-- Todos --</option>
+                    </select>
+                </div>
+                <div class="col-md-2 d-flex align-items-end">
+                    <button type="submit" class="btn btn-success w-100">Filtrar</button>
+                </div>
+            </div>
+        </div>
+    </form>
+
+    <div class="table-responsive shadow-sm rounded">
+        <table class="table table-hover align-middle bg-white">
+            <thead class="table-success">
+                <tr>
+                    <th>Producto</th>
+                    <th>Estado / Alerta</th>
+                    <th>Stock</th>
+                    <th>Precio</th>
+                    <th>Vencimiento</th>
+                    <th class="text-center">Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    var diasParaVencer = (item.FechaVencimiento - DateTime.Now).Days;
+                    string rowClass = "";
+                    string badgeText = "Al día";
+                    string badgeClass = "bg-success";
+
+                    // Lógica de Inventario Inteligente (Rúbrica)
+                    if (item.FechaVencimiento < DateTime.Now)
+                    {
+                        badgeText = "VENCIDO"; badgeClass = "bg-danger";
+                    }
+                    else if (diasParaVencer <= 30)
+                    {
+                        badgeText = "Vence < 30 días"; badgeClass = "bg-warning text-dark";
+                    }
+                    else if (diasParaVencer <= 60)
+                    {
+                        badgeText = "Vence < 60 días"; badgeClass = "bg-info text-dark";
+                    }
+
+                    <tr>
+                        <td>
+                            <span class="fw-bold">@item.Nombre</span><br />
+                            <small class="text-muted">@item.Categoria?.Nombre | @item.Estante?.Nombre</small>
+                        </td>
+                        <td>
+                            <span class="badge @badgeClass">@badgeText</span>
+                            @if (item.Stock < 5)
+                            {
+                                <span class="badge bg-dark">Bajo Stock</span>
+                            }
+                        </td>
+                        <td>
+                            <span class="@(item.Stock < 5 ? "text-danger fw-bold" : "")">@item.Stock un.</span>
+                        </td>
+                        <td>$@item.Precio</td>
+                        <td>@item.FechaVencimiento.ToShortDateString()</td>
+                        <td class="text-center">
+                            <div class="btn-group btn-group-sm">
+                                <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-outline-primary">Editar</a>
+                                <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-outline-danger">Borrar</a>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

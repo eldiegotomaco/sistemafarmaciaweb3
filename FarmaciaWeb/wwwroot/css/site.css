@@ -20,3 +20,32 @@ html {
 body {
   margin-bottom: 60px;
 }
+/* Paleta de colores Verde Claro */
+:root {
+    --verde-principal: #2ecc71;
+    --verde-claro: #d4efdf;
+    --verde-boton: #27ae60;
+}
+
+.btn-primary {
+    background-color: var(--verde-boton) !important;
+    border-color: var(--verde-boton) !important;
+}
+
+    .btn-primary:hover {
+        background-color: #1e8449 !important;
+    }
+
+/* Filas de la tabla */
+.table-warning {
+    background-color: #fcf3cf !important;
+}
+/* Bajo Stock */
+.table-danger {
+    background-color: #fadbd8 !important;
+}
+/* Vencido */
+
+.navbar {
+    border-bottom: 3px solid var(--verde-principal);
+}
