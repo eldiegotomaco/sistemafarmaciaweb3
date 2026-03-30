@@ -1,6 +1,21 @@
+# Carpetas de Visual Studio
 .vs/
+
+# Compilación
 bin/
 obj/
+
+# Archivos de usuario
 *.user
 *.suo
+
+# Logs
 *.log
+
+# Archivos temporales
+*.tmp
+*.temp
+
+# Rider / VSCode (opcional)
+.idea/
+.vscode/

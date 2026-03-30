@@ -3,24 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:models\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -33,14 +49,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:areas\\identity\\pages\\account\\accessdenied.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:views\\categorias\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|solutionrelative:controllers\\categoriascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{37C1B772-F4FF-42C2-A28C-3625F68B8C7A}|FarmaciaWeb.csproj|c:\\users\\diego\\sistemafarmaciaweb3\\farmaciaweb\\views\\categorias\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -86,7 +94,72 @@
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Models\\Categoria.cs",
+              "RelativeDocumentMoniker": "Models\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Models\\Categoria.cs",
+              "RelativeToolTip": "Models\\Categoria.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T22:15:16.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categorias\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Index.cshtml",
+              "RelativeToolTip": "Views\\Categorias\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T01:21:33.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADgAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T02:09:31.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AQIAADYAAAAAAAAAAADwvw4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-30T02:01:03.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CategoriasController.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Controllers\\CategoriasController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriasController.cs",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Controllers\\CategoriasController.cs",
+              "RelativeToolTip": "Controllers\\CategoriasController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAcwF4AAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T01:18:07.906Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -94,51 +167,37 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T02:10:10.467Z",
+              "WhenOpened": "2026-03-30T02:10:10.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AQIAAFEAAAAAAAAAAAAAAGgAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T21:34:35.654Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAAAMAAAAAAAAAAADwvxYAAAAKAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T02:09:31.662Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAADwvw4AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T02:01:03.718Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AQIAAGgAAAAAAAAAAADwv4EAAAAJAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAADwv0cAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T01:56:54.094Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "AccessDenied.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
@@ -146,12 +205,11 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T01:44:30.638Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:44:30.638Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "Logout.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
@@ -159,12 +217,11 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAADwvxYAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T01:13:15.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:13:15.965Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "AccessDenied.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
@@ -172,12 +229,11 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\AccessDenied.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T01:44:06.086Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:44:06.086Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
@@ -185,12 +241,11 @@
               "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T00:33:42.607Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T00:33:42.607Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "Edit.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Edit.cshtml",
               "RelativeDocumentMoniker": "Views\\Categorias\\Edit.cshtml",
@@ -198,12 +253,11 @@
               "RelativeToolTip": "Views\\Categorias\\Edit.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T01:22:17.357Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:22:17.357Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Categorias\\Delete.cshtml",
@@ -211,38 +265,11 @@
               "RelativeToolTip": "Views\\Categorias\\Delete.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T01:26:10.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:26:10.22Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Categorias\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Views\\Categorias\\Index.cshtml",
-              "RelativeToolTip": "Views\\Categorias\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T01:21:33.938Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CategoriasController.cs",
-              "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Controllers\\CategoriasController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CategoriasController.cs",
-              "ToolTip": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Controllers\\CategoriasController.cs",
-              "RelativeToolTip": "Controllers\\CategoriasController.cs",
-              "ViewState": "AQIAAEYAAAAAAAAAAADwv2UAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T01:18:07.906Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "EstantesController.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Controllers\\EstantesController.cs",
               "RelativeDocumentMoniker": "Controllers\\EstantesController.cs",
@@ -250,12 +277,11 @@
               "RelativeToolTip": "Controllers\\EstantesController.cs",
               "ViewState": "AQIAAAkAAAAAAAAAAAAAAAcAAAACAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T01:19:09.065Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:19:09.065Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "Logout.cshtml",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
@@ -263,12 +289,11 @@
               "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAHAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T01:13:03.49Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-30T01:13:03.49Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "FarmaciaWeb.csproj",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\FarmaciaWeb.csproj",
               "RelativeDocumentMoniker": "FarmaciaWeb.csproj",
@@ -280,7 +305,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "EmailSender.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Services\\EmailSender.cs",
               "RelativeDocumentMoniker": "Services\\EmailSender.cs",
@@ -292,7 +317,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -304,7 +329,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Diego\\sistemafarmaciaweb3\\FarmaciaWeb\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",

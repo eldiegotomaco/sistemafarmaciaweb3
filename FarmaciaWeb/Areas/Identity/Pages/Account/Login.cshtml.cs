@@ -93,11 +93,11 @@ namespace FarmaciaWeb.Areas.Identity.Pages.Account
 
                     if (await _userManager.IsInRoleAsync(user, "Administrador"))
                     {
-                        return RedirectToAction("Index", "Admin");
+                        return RedirectToAction("Index", "Home");
                     }
                     else if (await _userManager.IsInRoleAsync(user, "Farmaceutico"))
                     {
-                        return RedirectToAction("Index", "Home");
+                        return RedirectToAction("Index", "Categorias");
                     }
                     else
                     {

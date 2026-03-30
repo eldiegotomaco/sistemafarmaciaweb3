@@ -9,6 +9,6 @@ namespace FarmaciaWeb.Models
         [Required(ErrorMessage = "El nombre es obligatorio")]
         public string Nombre { get; set; }
 
-        public string Descripcion { get; set; }
+        public string? Descripcion { get; set; } // 🔥 nullable
     }
 }
