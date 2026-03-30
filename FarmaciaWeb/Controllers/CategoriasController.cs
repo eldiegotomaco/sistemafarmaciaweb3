@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using FarmaciaWeb.Models;
 using FarmaciaWeb.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FarmaciaWeb.Controllers
 {
@@ -14,17 +15,23 @@ namespace FarmaciaWeb.Controllers
             _context = context;
         }
 
+        // ✅ TODOS PUEDEN VER (Cliente incluido)
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Categorias.ToListAsync());
         }
 
+        // ✅ SOLO ADMIN Y FARMACEUTICO
+        [Authorize(Roles = "Administrador,Farmaceutico")]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Farmaceutico")]
         public async Task<IActionResult> Create(Categoria categoria)
         {
             if (ModelState.IsValid)
@@ -36,30 +43,59 @@ namespace FarmaciaWeb.Controllers
             return View(categoria);
         }
 
-        public async Task<IActionResult> Edit(int id)
+        // ✅ SOLO ADMIN Y FARMACEUTICO
+        [Authorize(Roles = "Administrador,Farmaceutico")]
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View(await _context.Categorias.FindAsync(id));
+            if (id == null) return NotFound();
+
+            var categoria = await _context.Categorias.FindAsync(id);
+            if (categoria == null) return NotFound();
+
+            return View(categoria);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(Categoria categoria)
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Farmaceutico")]
+        public async Task<IActionResult> Edit(int id, Categoria categoria)
         {
-            _context.Update(categoria);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (id != categoria.Id) return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(categoria);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(categoria);
         }
 
-        public async Task<IActionResult> Delete(int id)
+        // ✅ SOLO ADMIN
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View(await _context.Categorias.FindAsync(id));
+            if (id == null) return NotFound();
+
+            var categoria = await _context.Categorias.FindAsync(id);
+            if (categoria == null) return NotFound();
+
+            return View(categoria);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var categoria = await _context.Categorias.FindAsync(id);
-            _context.Categorias.Remove(categoria);
-            await _context.SaveChangesAsync();
+
+            if (categoria != null)
+            {
+                _context.Categorias.Remove(categoria);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction(nameof(Index));
         }
     }

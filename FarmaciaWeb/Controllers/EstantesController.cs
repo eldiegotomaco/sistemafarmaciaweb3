@@ -2,9 +2,11 @@
 using Microsoft.EntityFrameworkCore;
 using FarmaciaWeb.Models;
 using FarmaciaWeb.Data;
+using Microsoft.AspNetCore.Authorization;
 
 namespace FarmaciaWeb.Controllers
-{
+{ 
+    [Authorize(Roles = "Administrador,Farmaceutico")]
     public class EstantesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -14,6 +16,7 @@ namespace FarmaciaWeb.Controllers
             _context = context;
         }
 
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Estantes.ToListAsync());

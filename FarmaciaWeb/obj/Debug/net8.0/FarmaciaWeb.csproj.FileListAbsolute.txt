@@ -295,3 +295,4 @@ C:\Users\erikb\Desktop\sistemafarmaciaweb3\FarmaciaWeb\obj\Debug\net8.0\staticwe
 C:\Users\erikb\Desktop\sistemafarmaciaweb3\FarmaciaWeb\obj\Debug\net8.0\Farmacia.A3BC9EB0.Up2Date
 C:\Users\erikb\Desktop\sistemafarmaciaweb3\FarmaciaWeb\obj\Debug\net8.0\FarmaciaWeb.genruntimeconfig.cache
 C:\Users\erikb\Desktop\sistemafarmaciaweb3\FarmaciaWeb\obj\Debug\net8.0\ref\FarmaciaWeb.dll
+C:\Users\Diego\sistemafarmaciaweb3\FarmaciaWeb\obj\Debug\net8.0\FarmaciaWeb.sourcelink.json

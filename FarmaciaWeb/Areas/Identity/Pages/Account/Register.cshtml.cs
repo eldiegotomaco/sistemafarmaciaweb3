@@ -24,6 +24,7 @@ namespace FarmaciaWeb.Areas.Identity.Pages.Account
 {
     public class RegisterModel : PageModel
     {
+
         private readonly SignInManager<ApplicationUser> _signInManager;
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly IUserStore<ApplicationUser> _userStore;
@@ -95,7 +96,6 @@ namespace FarmaciaWeb.Areas.Identity.Pages.Account
             {
                 var user = CreateUser();
 
-                // 🔥 GUARDAR NOMBRE Y APELLIDO
                 user.Nombre = Input.Nombre;
                 user.Apellido = Input.Apellido;
 
@@ -108,8 +108,13 @@ namespace FarmaciaWeb.Areas.Identity.Pages.Account
                 {
                     _logger.LogInformation("User created.");
 
-                    // 🔥 ASIGNAR ROL
-                    await _userManager.AddToRoleAsync(user, "Cliente");
+                    // 🔥 ASIGNAR ROL SEGÚN SELECCIÓN
+                    if (Input.Rol == "Administrador")
+                        await _userManager.AddToRoleAsync(user, "Administrador");
+                    else if (Input.Rol == "Farmaceutico")
+                        await _userManager.AddToRoleAsync(user, "Farmaceutico");
+                    else
+                        await _userManager.AddToRoleAsync(user, "Cliente");
 
                     await _signInManager.SignInAsync(user, isPersistent: false);
                     return LocalRedirect(returnUrl);
