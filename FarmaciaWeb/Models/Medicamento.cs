@@ -43,9 +43,8 @@ namespace FarmaciaWeb.Models
         public int CategoriaId { get; set; }
         public virtual Categoria? Categoria { get; set; }
 
-        [Required(ErrorMessage = "Debe asignar un estante")]
         [DisplayName("Estante/Ubicación")]
-        public int EstanteId { get; set; }
+        public int? EstanteId { get; set; }
         public virtual Estante? Estante { get; set; }
     }
 }

@@ -7899,23 +7899,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Erick\\.nuget\\packages\\": {},
+    "C:\\Users\\usser\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\FarmaciaLimpia\\FarmaciaWeb\\FarmaciaWeb.csproj",
+      "projectUniqueName": "C:\\Users\\usser\\Documents\\web3\\sistemafarmaciaweb3\\FarmaciaWeb\\FarmaciaWeb.csproj",
       "projectName": "FarmaciaWeb",
-      "projectPath": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\FarmaciaLimpia\\FarmaciaWeb\\FarmaciaWeb.csproj",
-      "packagesPath": "C:\\Users\\Erick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Erick\\OneDrive\\Documentos\\WEB 3\\FarmaciaLimpia\\FarmaciaWeb\\obj\\",
+      "projectPath": "C:\\Users\\usser\\Documents\\web3\\sistemafarmaciaweb3\\FarmaciaWeb\\FarmaciaWeb.csproj",
+      "packagesPath": "C:\\Users\\usser\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\usser\\Documents\\web3\\sistemafarmaciaweb3\\FarmaciaWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Erick\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\usser\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -7924,7 +7924,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -7943,7 +7942,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -7995,7 +7994,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.104/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
