@@ -15,14 +15,12 @@ namespace FarmaciaWeb.Controllers
             _context = context;
         }
 
-        // ✅ TODOS PUEDEN VER (Cliente incluido)
         [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Categorias.ToListAsync());
         }
 
-        // ✅ SOLO ADMIN Y FARMACEUTICO
         [Authorize(Roles = "Administrador,Farmaceutico")]
         public IActionResult Create()
         {
@@ -43,7 +41,6 @@ namespace FarmaciaWeb.Controllers
             return View(categoria);
         }
 
-        // ✅ SOLO ADMIN Y FARMACEUTICO
         [Authorize(Roles = "Administrador,Farmaceutico")]
         public async Task<IActionResult> Edit(int? id)
         {
@@ -71,7 +68,6 @@ namespace FarmaciaWeb.Controllers
             return View(categoria);
         }
 
-        // ✅ SOLO ADMIN
         [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Delete(int? id)
         {

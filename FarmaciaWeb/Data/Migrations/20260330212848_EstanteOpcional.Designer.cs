@@ -4,6 +4,7 @@ using FarmaciaWeb.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,13 +12,14 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace FarmaciaWeb.Data.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260330212848_EstanteOpcional")]
+    partial class EstanteOpcional
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.2")
                 .HasAnnotation("ProductVersion", "8.0.23")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
@@ -88,6 +90,7 @@ namespace FarmaciaWeb.Data.Migrations
                         .HasColumnType("nvarchar(250)");
 
                     b.Property<int?>("EstanteId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.Property<DateTime>("FechaVencimiento")
@@ -325,7 +328,9 @@ namespace FarmaciaWeb.Data.Migrations
 
                     b.HasOne("FarmaciaWeb.Models.Estante", "Estante")
                         .WithMany()
-                        .HasForeignKey("EstanteId");
+                        .HasForeignKey("EstanteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Categoria");
 

@@ -5,8 +5,7 @@ using FarmaciaWeb.Data;
 using Microsoft.AspNetCore.Authorization;
 
 namespace FarmaciaWeb.Controllers
-{ 
-    [Authorize(Roles = "Administrador,Farmaceutico")]
+{
     public class EstantesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -22,12 +21,15 @@ namespace FarmaciaWeb.Controllers
             return View(await _context.Estantes.ToListAsync());
         }
 
+        [Authorize(Roles = "Administrador,Farmaceutico")]
         public IActionResult Create()
         {
             return View();
         }
 
         [HttpPost]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Farmaceutico")]
         public async Task<IActionResult> Create(Estante estante)
         {
             if (ModelState.IsValid)
@@ -39,30 +41,57 @@ namespace FarmaciaWeb.Controllers
             return View(estante);
         }
 
-        public async Task<IActionResult> Edit(int id)
+        [Authorize(Roles = "Administrador,Farmaceutico")]
+        public async Task<IActionResult> Edit(int? id)
         {
-            return View(await _context.Estantes.FindAsync(id));
+            if (id == null) return NotFound();
+
+            var estante = await _context.Estantes.FindAsync(id);
+            if (estante == null) return NotFound();
+
+            return View(estante);
         }
 
         [HttpPost]
-        public async Task<IActionResult> Edit(Estante estante)
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador,Farmaceutico")]
+        public async Task<IActionResult> Edit(int id, Estante estante)
         {
-            _context.Update(estante);
-            await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+            if (id != estante.Id) return NotFound();
+
+            if (ModelState.IsValid)
+            {
+                _context.Update(estante);
+                await _context.SaveChangesAsync();
+                return RedirectToAction(nameof(Index));
+            }
+            return View(estante);
         }
 
-        public async Task<IActionResult> Delete(int id)
+        [Authorize(Roles = "Administrador")]
+        public async Task<IActionResult> Delete(int? id)
         {
-            return View(await _context.Estantes.FindAsync(id));
+            if (id == null) return NotFound();
+
+            var estante = await _context.Estantes.FindAsync(id);
+            if (estante == null) return NotFound();
+
+            return View(estante);
         }
 
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var estante = await _context.Estantes.FindAsync(id);
-            _context.Estantes.Remove(estante);
-            await _context.SaveChangesAsync();
+
+            if (estante != null)
+            {
+                _context.Estantes.Remove(estante);
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction(nameof(Index));
         }
     }

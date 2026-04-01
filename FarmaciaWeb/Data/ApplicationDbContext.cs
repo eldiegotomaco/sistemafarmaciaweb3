@@ -1,6 +1,7 @@
 ﻿using FarmaciaWeb.Models;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using FarmaciaWeb.Models;
 
 namespace FarmaciaWeb.Data
 {
@@ -13,5 +14,6 @@ namespace FarmaciaWeb.Data
 
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Estante> Estantes { get; set; }
+        public DbSet<FarmaciaWeb.Models.Medicamento> Medicamentos { get; set; }
     }
 }

@@ -1,0 +1,85 @@
+﻿@model FarmaciaWeb.Models.Medicamento
+
+@{
+    ViewData["Title"] = "Nuevo Medicamento";
+}
+
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card shadow-sm border-success">
+                <div class="card-header bg-success text-white text-center">
+                    <h3><i class="bi bi-plus-circle"></i> Registrar Nuevo Medicamento</h3>
+                </div>
+                <div class="card-body bg-light">
+                    <form asp-action="Create">
+                        <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Nombre" class="form-label fw-bold"></label>
+                                <input asp-for="Nombre" class="form-control border-success" placeholder="Ej: Paracetamol 500mg" />
+                                <span asp-validation-for="Nombre" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="Activo" class="form-label fw-bold">Estado</label>
+                                <select asp-for="Activo" class="form-select border-success">
+                                    <option value="true">Activo</option>
+                                    <option value="false">Inactivo</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-12 mb-3">
+                                <label asp-for="Descripcion" class="form-label fw-bold"></label>
+                                <textarea asp-for="Descripcion" class="form-control border-success" rows="2" placeholder="Detalles adicionales del medicamento..."></textarea>
+                                <span asp-validation-for="Descripcion" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Precio" class="form-label fw-bold"></label>
+                                <div class="input-group">
+                                    <span class="input-group-text bg-success text-white">$</span>
+                                    <input asp-for="Precio" class="form-control border-success" />
+                                </div>
+                                <span asp-validation-for="Precio" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="Stock" class="form-label fw-bold"></label>
+                                <input asp-for="Stock" class="form-control border-success" />
+                                <span asp-validation-for="Stock" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label asp-for="FechaVencimiento" class="form-label fw-bold"></label>
+                                <input asp-for="FechaVencimiento" class="form-control border-success" />
+                                <span asp-validation-for="FechaVencimiento" class="text-danger"></span>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="CategoriaId" class="form-label fw-bold"></label>
+                                <select asp-for="CategoriaId" class="form-select border-success" asp-items="ViewBag.CategoriaId">
+                                    <option value="">-- Categoría --</option>
+                                </select>
+                            </div>
+
+                            <div class="col-md-6 mb-3">
+                                <label asp-for="EstanteId" class="form-label fw-bold">Estante</label>
+                                <select asp-for="EstanteId" class="form-select border-success" asp-items="ViewBag.EstanteId">
+                                    <option value="">-- Estante --</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <hr />
+                        <div class="d-flex justify-content-between">
+                            <a asp-action="Index" class="btn btn-outline-secondary">Volver al Listado</a>
+                            <button type="submit" class="btn btn-success btn-lg px-5">Guardar Medicamento</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

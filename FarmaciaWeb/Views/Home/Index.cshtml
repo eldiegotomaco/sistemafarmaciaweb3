@@ -4,39 +4,23 @@
 
 <div class="container text-center mt-5">
 
-    <h1 class="display-4 fw-bold text-primary">💊 Farmacia</h1>
+    <h1 class="display-4 text-primary">💊 Farmacia</h1>
     <p class="lead">Sistema de gestión farmacéutica</p>
-    <div class="row mt-5">
-        <div class="col-md-6">
-            <div class="card shadow p-4">
-                <h5>Gestión de Categorías</h5>
-                <p>Administra tipos de medicamentos</p>
-            </div>
-        </div>
 
-        <div class="col-md-6">
-            <div class="card shadow p-4">
-                <h5>Gestión de Estantes</h5>
-                <p>Organiza los productos en farmacia</p>
-            </div>
-        </div>
-    </div>
-    <hr class="my-4" />
+    <hr />
 
-    @if (User.Identity.IsAuthenticated)
+    @if (User.Identity != null && User.Identity.IsAuthenticated)
     {
-        <h4 class="mb-4">Bienvenido @User.Identity.Name 👋</h4>
+        <h4>Bienvenido @User.Identity.Name 👋</h4>
 
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
+        <div class="mt-4">
 
-            <!-- BOTÓN CATEGORÍAS -->
-            <a href="/Categorias" class="btn btn-lg btn-primary shadow">
-                📂 Categorías
+            <a href="/Categorias" class="btn btn-primary m-2">
+                Categorías
             </a>
 
-            <!-- BOTÓN ESTANTES -->
-            <a href="/Estantes" class="btn btn-lg btn-success shadow">
-                📦 Estantes
+            <a href="/Estantes" class="btn btn-success m-2">
+                Estantes
             </a>
 
         </div>
@@ -44,15 +28,15 @@
     else
     {
         <div class="alert alert-info mt-4">
-            🔐 Debes iniciar sesión para acceder al sistema
+            Debes iniciar sesión
         </div>
 
-        <a class="btn btn-primary m-2" asp-area="Identity" asp-page="/Account/Login">
-            Iniciar sesión
+        <a asp-area="Identity" asp-page="/Account/Login" class="btn btn-primary m-2">
+            Login
         </a>
 
-        <a class="btn btn-outline-primary m-2" asp-area="Identity" asp-page="/Account/Register">
-            Registrarse
+        <a asp-area="Identity" asp-page="/Account/Register" class="btn btn-outline-primary m-2">
+            Register
         </a>
     }
 

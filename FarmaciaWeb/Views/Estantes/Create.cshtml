@@ -1,10 +1,26 @@
 ﻿@model FarmaciaWeb.Models.Estante
 
-<h2>Crear</h2>
+<h2>Crear Estante</h2>
 
-<form asp-action="Create">
-    <input asp-for="Nombre" class="form-control" placeholder="Nombre" />
-    <input asp-for="Descripcion" class="form-control" placeholder="Descripción" />
+<form asp-action="Create" method="post">
 
-    <button type="submit" class="btn btn-success">Guardar</button>
+    <div class="form-group">
+        <label asp-for="Nombre"></label>
+        <input asp-for="Nombre" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Ubicacion"></label>
+        <input asp-for="Ubicacion" class="form-control" />
+    </div>
+
+    <div class="form-group">
+        <label asp-for="Descripcion"></label>
+        <input asp-for="Descripcion" class="form-control" />
+    </div>
+
+    <br />
+
+    <button type="submit" class="btn btn-primary">Guardar</button>
+
 </form>
